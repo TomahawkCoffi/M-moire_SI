@@ -1,6 +1,8 @@
-﻿using System;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using System.Text;
 
 
 namespace Mémoire_SI
@@ -14,8 +16,6 @@ namespace Mémoire_SI
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\willc\Documents\si_db.mdf;Integrated Security=True;Connect Timeout=30");
-
-        //private void CreerCompte(object sender, EventArgs e)
 
 
         private void checkbmdp_CheckedChanged(object sender, EventArgs e)
@@ -57,6 +57,21 @@ namespace Mémoire_SI
         {
             Application.Exit();
         }
+
+        //// Hashage du mot de passe
+        //public static string HashPassword(string password)
+        //{
+        //    using (SHA256 sha256Hash = SHA256.Create())
+        //    {
+        //        byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+        //        StringBuilder builder = new StringBuilder();
+        //        for (int i = 0; i < bytes.Length; i++)
+        //        {
+        //            builder.Append(bytes[i].ToString("x2"));
+        //        }
+        //        return builder.ToString();
+        //    }
+        //}
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {

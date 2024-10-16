@@ -37,9 +37,9 @@ namespace Mémoire_SI
 
         private void Fseuraddbtn_Click(object sender, EventArgs e)
         {
-            if(four.FId == 0)
+            if (four.FId == 0)
 
-                if(fseurnomtb.Text == "" || fseuraddtb.Text == "" || fseurnumtb.Text == "")
+                if (fseurnomtb.Text == "" || fseuraddtb.Text == "" || fseurnumtb.Text == "")
                 {
                     MessageBox.Show("information manquante");
                 }

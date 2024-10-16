@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mémoire_SI.Model;
+using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
-using Mémoire_SI.Model;
-using Microsoft.Data.SqlClient;
 
 
 namespace Mémoire_SI
@@ -52,7 +52,7 @@ namespace Mémoire_SI
 
         private void medaddbtn_Click(object sender, EventArgs e)
         {
-            if(med.MedId == 0)
+            if (med.MedId == 0)
 
                 if (mednomtb.Text == "")
                 {
@@ -60,22 +60,22 @@ namespace Mémoire_SI
                 }
                 else
                 {
-                
-                        try
-                        {
-                            med.Mednom = mednomtb.Text;
-                            med.Medcat = int.Parse(medcatcb.SelectedValue.ToString());
 
-                            med.Save(med);
-                            Showmed();
-                            Reset();
+                    try
+                    {
+                        med.Mednom = mednomtb.Text;
+                        med.Medcat = int.Parse(medcatcb.SelectedValue.ToString());
 
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
-    
+                        med.Save(med);
+                        Showmed();
+                        Reset();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
                 }
             else
             {
@@ -170,7 +170,7 @@ namespace Mémoire_SI
                     {
                         MessageBox.Show("Erreur");
                     }
-             
+
                 }
                 catch (Exception ex)
                 {

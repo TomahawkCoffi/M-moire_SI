@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
 
 namespace Mémoire_SI.Model
@@ -16,13 +16,19 @@ namespace Mémoire_SI.Model
         public int Lmednom { get; set; }
         public int Lfnom { get; set; }
         public int Lqte { get; set; }
-        public DateTime Ldateliv { get; set;}
+        public DateTime Ldateliv { get; set; }
         public DateTime Ldateper { get; set; }
 
         private SqlConnection con = DbConfig.con;
 
         public bool Save(Entree_de_stock ent)
         {
+
+            if (!ValidateDates(ent.Ldateliv, ent.Ldateper))
+            {
+                return false;
+            }
+
             try
             {
                 con.Open();
@@ -42,7 +48,7 @@ namespace Mémoire_SI.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show($"Erreur lors de l'enregistrement : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
@@ -50,6 +56,13 @@ namespace Mémoire_SI.Model
 
         public bool Update(Entree_de_stock ent)
         {
+
+
+            if (!ValidateDates(ent.Ldateliv, ent.Ldateper))
+            {
+                return false;
+            }
+
             try
             {
                 con.Open();
@@ -71,10 +84,33 @@ namespace Mémoire_SI.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show($"Erreur lors de la mise à jour : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
+        }
+        private bool ValidateDates(DateTime dateLivraison, DateTime datePeremption)
+        {
+            DateTime today = DateTime.Today;
+            if (dateLivraison < today)
+            {
+                MessageBox.Show("La date de livraison ne peut pas être antérieure à la date d'aujourd'hui.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (datePeremption < today)
+            {
+                MessageBox.Show("La date de péremption ne peut pas être antérieure à la date d'aujourd'hui.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (datePeremption < dateLivraison)
+            {
+                MessageBox.Show("La date de péremption ne peut pas être antérieure à la date de livraison.", "Erreur de validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
         }
         public bool Delete(Entree_de_stock ent)
         {
@@ -108,7 +144,7 @@ namespace Mémoire_SI.Model
 
 
             try
-            {  
+            {
                 con.Open();
                 DataTable dt = new DataTable();
                 SqlDataAdapter adap = new SqlDataAdapter("SELECT stk.LId AS Id, med.Mednom AS Medicament, fsr.Fnom AS Fournisseur, stk.Lqte AS Quantity, stk.Ldateliv AS DateLivraison, stk.Ldateper AS DatePeromption from livraison stk LEFT JOIN med_tbl med ON stk.Lmednom = med.MedId LEFT JOIN fournisseurs_tbl fsr ON stk.Lfnom = fsr.FId", con);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
-
 
 namespace Mémoire_SI
 {
@@ -20,21 +19,22 @@ namespace Mémoire_SI
             ShowGrandStock();
         }
 
-        //private int key;
         Situation sit = new Situation();
 
         private void ShowGrandStock()
         {
-            DataGridView_stock.DataSource = sit.Get_stock_affichage_list();
+            // Utilisation de la méthode AfficherStock pour l'affichage et la mise en surbrillance des stocks
+            sit.AfficherStock(DataGridView_stock);
         }
+
         private void stockDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            // Code pour gérer les événements de clic dans le DataGridView si nécessaire
         }
 
         private void DataGridView_stock_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            // Code pour gérer les événements de clic dans le DataGridView si nécessaire
         }
     }
 }

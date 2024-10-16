@@ -89,12 +89,15 @@ namespace Mémoire_SI
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BorderRadius = 5;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Red;
+            this.guna2Button2.FillColor = System.Drawing.Color.DarkViolet;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::Mémoire_SI.Properties.Resources.icons8_effacer_64;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button2.Location = new System.Drawing.Point(107, 655);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
@@ -172,12 +175,15 @@ namespace Mémoire_SI
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkViolet;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Mémoire_SI.Properties.Resources.icons8_approved_48;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button1.Location = new System.Drawing.Point(107, 591);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;

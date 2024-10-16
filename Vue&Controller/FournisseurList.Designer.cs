@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -105,12 +105,15 @@
             // 
             // fseuraddbtn
             // 
+            this.fseuraddbtn.BorderRadius = 5;
             this.fseuraddbtn.CheckedState.Parent = this.fseuraddbtn;
             this.fseuraddbtn.CustomImages.Parent = this.fseuraddbtn;
-            this.fseuraddbtn.FillColor = System.Drawing.Color.Lime;
+            this.fseuraddbtn.FillColor = System.Drawing.Color.DarkOrchid;
             this.fseuraddbtn.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fseuraddbtn.ForeColor = System.Drawing.Color.White;
             this.fseuraddbtn.HoverState.Parent = this.fseuraddbtn;
+            this.fseuraddbtn.Image = global::Mémoire_SI.Properties.Resources.icons8_approved_48;
+            this.fseuraddbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.fseuraddbtn.Location = new System.Drawing.Point(68, 281);
             this.fseuraddbtn.Name = "fseuraddbtn";
             this.fseuraddbtn.ShadowDecoration.Parent = this.fseuraddbtn;
@@ -121,11 +124,15 @@
             // 
             // btnmod
             // 
+            this.btnmod.BorderRadius = 5;
             this.btnmod.CheckedState.Parent = this.btnmod;
             this.btnmod.CustomImages.Parent = this.btnmod;
+            this.btnmod.FillColor = System.Drawing.Color.DarkOrchid;
             this.btnmod.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmod.ForeColor = System.Drawing.Color.White;
             this.btnmod.HoverState.Parent = this.btnmod;
+            this.btnmod.Image = global::Mémoire_SI.Properties.Resources.icons8_boucle_50;
+            this.btnmod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnmod.Location = new System.Drawing.Point(478, 281);
             this.btnmod.Name = "btnmod";
             this.btnmod.ShadowDecoration.Parent = this.btnmod;
@@ -136,12 +143,15 @@
             // 
             // btnsupp
             // 
+            this.btnsupp.BorderRadius = 5;
             this.btnsupp.CheckedState.Parent = this.btnsupp;
             this.btnsupp.CustomImages.Parent = this.btnsupp;
-            this.btnsupp.FillColor = System.Drawing.Color.Red;
+            this.btnsupp.FillColor = System.Drawing.Color.DarkOrchid;
             this.btnsupp.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsupp.ForeColor = System.Drawing.Color.White;
             this.btnsupp.HoverState.Parent = this.btnsupp;
+            this.btnsupp.Image = global::Mémoire_SI.Properties.Resources.icons8_supprimer_pour_toujours_50;
+            this.btnsupp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnsupp.Location = new System.Drawing.Point(931, 281);
             this.btnsupp.Name = "btnsupp";
             this.btnsupp.ShadowDecoration.Parent = this.btnsupp;
@@ -154,30 +164,30 @@
             // 
             this.FseurDGV.AllowUserToAddRows = false;
             this.FseurDGV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.FseurDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.FseurDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.FseurDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.FseurDGV.BackgroundColor = System.Drawing.Color.White;
             this.FseurDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FseurDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.FseurDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FseurDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FseurDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.FseurDGV.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FseurDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FseurDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.FseurDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.FseurDGV.EnableHeadersVisualStyles = false;
             this.FseurDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -207,14 +217,14 @@
             this.FseurDGV.ThemeStyle.ReadOnly = true;
             this.FseurDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.FseurDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.FseurDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.FseurDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FseurDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.FseurDGV.ThemeStyle.RowsStyle.Height = 28;
             this.FseurDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.FseurDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.FseurDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FseurDGV_CellContentClick);
             // 
-            // Fournisseur
+            // FournisseurList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -231,7 +241,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Fournisseur";
+            this.Name = "FournisseurList";
             this.Text = "fournisseur";
             ((System.ComponentModel.ISupportInitialize)(this.FseurDGV)).EndInit();
             this.ResumeLayout(false);

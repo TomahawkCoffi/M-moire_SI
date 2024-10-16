@@ -66,20 +66,21 @@ namespace Mémoire_SI
                 else
                 {
                     cat.Catnom = catnomtb.Text;
-                   bool success = cat.Update(cat);
+                    bool success = cat.Update(cat);
                     if (success)
                     {
                         showcat();
                         Reset();
 
-                    } else
+                    }
+                    else
                     {
                         MessageBox.Show("Rééssayer");
                     }
                 }
             }
-        
-    }
+
+        }
 
         private void btncatsupp_Click(object sender, EventArgs e)
         {
@@ -96,8 +97,8 @@ namespace Mémoire_SI
                     {
                         showcat();
                         Reset();
-                    } 
-                    else 
+                    }
+                    else
                     {
                         MessageBox.Show("Erreur, la categorie n'a pu etre supprime");
                     }
@@ -119,11 +120,15 @@ namespace Mémoire_SI
         private void categorieDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             key = Convert.ToInt32(categorieDGV.SelectedRows[0].Cells[0].Value.ToString());
-           
+
             cat = cat.FindOneById(key);
 
             catnomtb.Text = cat.Catnom;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,15 +1,15 @@
-﻿using Org.BouncyCastle.Asn1.Crmf;
+﻿using Guna.UI2.HtmlRenderer.Adapters;
+using Microsoft.Data.SqlClient;
+using Org.BouncyCastle.Asn1.Crmf;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Data;
-using Microsoft.Data.SqlClient;
-using Guna.UI2.HtmlRenderer.Adapters;
 
 namespace Mémoire_SI.Model
 {
@@ -34,14 +34,14 @@ namespace Mémoire_SI.Model
                 con.Close();
                 return true;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message}");
                 return false;
             }
         }
 
-        public bool Update(Categorie cat) 
+        public bool Update(Categorie cat)
         {
             try
             {
@@ -64,7 +64,7 @@ namespace Mémoire_SI.Model
             }
         }
 
-        public bool Delete(Categorie cat) 
+        public bool Delete(Categorie cat)
         {
             try
             {
@@ -149,9 +149,9 @@ namespace Mémoire_SI.Model
         {
             List<Categorie> cats = new List<Categorie>();
 
-            foreach(Categorie cat in this.Get())
+            foreach (Categorie cat in this.Get())
             {
-                cats.Add(new Categorie() { Catnom = cat.Catnom , CId= cat.CId});
+                cats.Add(new Categorie() { Catnom = cat.Catnom, CId = cat.CId });
             }
             medcatcb.DataSource = cats;
             medcatcb.DisplayMember = "Catnom";

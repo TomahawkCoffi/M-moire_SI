@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.checkboxmdp = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mdptxt = new Guna.UI.WinForms.GunaLineTextBox();
+            this.usertxt = new Guna.UI.WinForms.GunaLineTextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mdptxt = new Guna.UI.WinForms.GunaLineTextBox();
-            this.usertxt = new Guna.UI.WinForms.GunaLineTextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkboxmdp
@@ -61,82 +61,6 @@
             this.checkboxmdp.UseVisualStyleBackColor = true;
             this.checkboxmdp.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(105, 570);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(349, 48);
-            this.guna2Button1.TabIndex = 25;
-            this.guna2Button1.TabStop = false;
-            this.guna2Button1.Text = "Valider";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 344);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 31);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Mot de passe";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(60, 179);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 31);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Nom utilisateur";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(220, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 45);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "LOGIN";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(338, 732);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 39);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Créer un compte";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Red;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(105, 637);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(349, 48);
-            this.guna2Button2.TabIndex = 18;
-            this.guna2Button2.TabStop = false;
-            this.guna2Button2.Text = "Effacer";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -151,7 +75,7 @@
             // 
             this.mdptxt.BackColor = System.Drawing.Color.White;
             this.mdptxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.mdptxt.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.mdptxt.FocusedLineColor = System.Drawing.Color.DarkOrchid;
             this.mdptxt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mdptxt.LineColor = System.Drawing.Color.Gainsboro;
             this.mdptxt.LineSize = 5;
@@ -166,7 +90,7 @@
             // 
             this.usertxt.BackColor = System.Drawing.Color.White;
             this.usertxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.usertxt.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.usertxt.FocusedLineColor = System.Drawing.Color.DarkOrchid;
             this.usertxt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usertxt.LineColor = System.Drawing.Color.Gainsboro;
             this.usertxt.LineSize = 5;
@@ -183,13 +107,105 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Red;
+            this.button2.Image = global::Mémoire_SI.Properties.Resources.icons8_effacer_64__1_;
             this.button2.Location = new System.Drawing.Point(524, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 45);
             this.button2.TabIndex = 27;
-            this.button2.Text = "x";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 5;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkOrchid;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Mémoire_SI.Properties.Resources.icons8_approved_48;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button1.Location = new System.Drawing.Point(105, 570);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(349, 48);
+            this.guna2Button1.TabIndex = 25;
+            this.guna2Button1.TabStop = false;
+            this.guna2Button1.Text = "Valider";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Image = global::Mémoire_SI.Properties.Resources.icons8_mot_de_passe_30;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4.Location = new System.Drawing.Point(60, 344);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(191, 31);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Mot de passe      ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Image = global::Mémoire_SI.Properties.Resources.icons8_invité_homme_30__1_;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(60, 179);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 31);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Nom utilisateur     ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Image = global::Mémoire_SI.Properties.Resources.icons8_se_connecter_32;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Location = new System.Drawing.Point(220, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 45);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "LOGIN   ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.button1.Image = global::Mémoire_SI.Properties.Resources.icons8_créer_un_nouveau_48;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(338, 719);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(181, 52);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Créer un compte";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 5;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.DarkOrchid;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::Mémoire_SI.Properties.Resources.icons8_effacer_64;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button2.Location = new System.Drawing.Point(105, 637);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(349, 48);
+            this.guna2Button2.TabIndex = 18;
+            this.guna2Button2.TabStop = false;
+            this.guna2Button2.Text = "Effacer";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // Userlogin
             // 

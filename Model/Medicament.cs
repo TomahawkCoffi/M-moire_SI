@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Mémoire_SI.Model;
+using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Mémoire_SI.Model;
-using Microsoft.Data.SqlClient;
 
 
 namespace Mémoire_SI

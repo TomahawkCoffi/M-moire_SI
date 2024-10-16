@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.si_dbDataSet = new Mémoire_SI.si_dbDataSet();
@@ -89,7 +89,7 @@
             this.entree_de_stock_qte.BackColor = System.Drawing.Color.White;
             this.entree_de_stock_qte.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.entree_de_stock_qte.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.entree_de_stock_qte.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entree_de_stock_qte.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entree_de_stock_qte.LineColor = System.Drawing.Color.Gainsboro;
             this.entree_de_stock_qte.Location = new System.Drawing.Point(906, 43);
             this.entree_de_stock_qte.Name = "entree_de_stock_qte";
@@ -163,9 +163,11 @@
             // 
             // medlivdate
             // 
+            this.medlivdate.BorderRadius = 5;
             this.medlivdate.CheckedState.Parent = this.medlivdate;
-            this.medlivdate.FillColor = System.Drawing.Color.LightGreen;
+            this.medlivdate.FillColor = System.Drawing.Color.DarkOrchid;
             this.medlivdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medlivdate.ForeColor = System.Drawing.Color.White;
             this.medlivdate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.medlivdate.HoverState.Parent = this.medlivdate;
             this.medlivdate.Location = new System.Drawing.Point(12, 137);
@@ -179,9 +181,11 @@
             // 
             // medvaldate
             // 
+            this.medvaldate.BorderRadius = 5;
             this.medvaldate.CheckedState.Parent = this.medvaldate;
-            this.medvaldate.FillColor = System.Drawing.Color.LightGreen;
+            this.medvaldate.FillColor = System.Drawing.Color.DarkOrchid;
             this.medvaldate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medvaldate.ForeColor = System.Drawing.Color.White;
             this.medvaldate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.medvaldate.HoverState.Parent = this.medvaldate;
             this.medvaldate.Location = new System.Drawing.Point(461, 137);
@@ -241,12 +245,15 @@
             // 
             // entree_de_stock_supp_btn
             // 
+            this.entree_de_stock_supp_btn.BorderRadius = 5;
             this.entree_de_stock_supp_btn.CheckedState.Parent = this.entree_de_stock_supp_btn;
             this.entree_de_stock_supp_btn.CustomImages.Parent = this.entree_de_stock_supp_btn;
-            this.entree_de_stock_supp_btn.FillColor = System.Drawing.Color.Red;
+            this.entree_de_stock_supp_btn.FillColor = System.Drawing.Color.DarkOrchid;
             this.entree_de_stock_supp_btn.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entree_de_stock_supp_btn.ForeColor = System.Drawing.Color.White;
             this.entree_de_stock_supp_btn.HoverState.Parent = this.entree_de_stock_supp_btn;
+            this.entree_de_stock_supp_btn.Image = global::Mémoire_SI.Properties.Resources.icons8_supprimer_pour_toujours_50;
+            this.entree_de_stock_supp_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.entree_de_stock_supp_btn.Location = new System.Drawing.Point(950, 281);
             this.entree_de_stock_supp_btn.Name = "entree_de_stock_supp_btn";
             this.entree_de_stock_supp_btn.ShadowDecoration.Parent = this.entree_de_stock_supp_btn;
@@ -257,11 +264,15 @@
             // 
             // entree_de_stock_modif_btn
             // 
+            this.entree_de_stock_modif_btn.BorderRadius = 5;
             this.entree_de_stock_modif_btn.CheckedState.Parent = this.entree_de_stock_modif_btn;
             this.entree_de_stock_modif_btn.CustomImages.Parent = this.entree_de_stock_modif_btn;
+            this.entree_de_stock_modif_btn.FillColor = System.Drawing.Color.DarkOrchid;
             this.entree_de_stock_modif_btn.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entree_de_stock_modif_btn.ForeColor = System.Drawing.Color.White;
             this.entree_de_stock_modif_btn.HoverState.Parent = this.entree_de_stock_modif_btn;
+            this.entree_de_stock_modif_btn.Image = global::Mémoire_SI.Properties.Resources.icons8_boucle_50;
+            this.entree_de_stock_modif_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.entree_de_stock_modif_btn.Location = new System.Drawing.Point(507, 281);
             this.entree_de_stock_modif_btn.Name = "entree_de_stock_modif_btn";
             this.entree_de_stock_modif_btn.ShadowDecoration.Parent = this.entree_de_stock_modif_btn;
@@ -272,12 +283,15 @@
             // 
             // entree_de_stock_add_btn
             // 
+            this.entree_de_stock_add_btn.BorderRadius = 5;
             this.entree_de_stock_add_btn.CheckedState.Parent = this.entree_de_stock_add_btn;
             this.entree_de_stock_add_btn.CustomImages.Parent = this.entree_de_stock_add_btn;
-            this.entree_de_stock_add_btn.FillColor = System.Drawing.Color.Lime;
+            this.entree_de_stock_add_btn.FillColor = System.Drawing.Color.DarkOrchid;
             this.entree_de_stock_add_btn.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entree_de_stock_add_btn.ForeColor = System.Drawing.Color.White;
             this.entree_de_stock_add_btn.HoverState.Parent = this.entree_de_stock_add_btn;
+            this.entree_de_stock_add_btn.Image = global::Mémoire_SI.Properties.Resources.icons8_approved_48;
+            this.entree_de_stock_add_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.entree_de_stock_add_btn.Location = new System.Drawing.Point(87, 281);
             this.entree_de_stock_add_btn.Name = "entree_de_stock_add_btn";
             this.entree_de_stock_add_btn.ShadowDecoration.Parent = this.entree_de_stock_add_btn;
@@ -290,30 +304,30 @@
             // 
             this.Entree_de_stockDGV.AllowUserToAddRows = false;
             this.Entree_de_stockDGV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Entree_de_stockDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Entree_de_stockDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Entree_de_stockDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Entree_de_stockDGV.BackgroundColor = System.Drawing.Color.White;
             this.Entree_de_stockDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Entree_de_stockDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Entree_de_stockDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Entree_de_stockDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Entree_de_stockDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.Entree_de_stockDGV.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Entree_de_stockDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Entree_de_stockDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.Entree_de_stockDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Entree_de_stockDGV.EnableHeadersVisualStyles = false;
             this.Entree_de_stockDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -343,7 +357,7 @@
             this.Entree_de_stockDGV.ThemeStyle.ReadOnly = true;
             this.Entree_de_stockDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.Entree_de_stockDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.Entree_de_stockDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Entree_de_stockDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Entree_de_stockDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.Entree_de_stockDGV.ThemeStyle.RowsStyle.Height = 28;
             this.Entree_de_stockDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));

@@ -1,17 +1,17 @@
-﻿using System;
+﻿using K4os.Compression.LZ4.Internal;
+using Mémoire_SI.Model;
+using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using K4os.Compression.LZ4.Internal;
-using Mémoire_SI.Model;
-using Microsoft.Data.SqlClient;
 using System.Windows.Input;
-using System.Security.Policy;
 
 
 
@@ -123,7 +123,7 @@ namespace Mémoire_SI
                     bool success = ent.Update(ent);
                     if (success)
                     {
-                        Showliv ();
+                        Showliv();
                         Reset();
                     }
                     else
@@ -179,7 +179,7 @@ namespace Mémoire_SI
 
             ent = ent.FindOneById(key);
 
-       
+
             medvaldate.Text = ent.Ldateper.ToString();
             medlivdate.Text = ent.Ldateliv.ToString();
             entree_de_stock_mednomcb.SelectedValue = ent.Lmednom;

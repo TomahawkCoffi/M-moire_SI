@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using Microsoft.Data.SqlClient;
 
 namespace Mémoire_SI
 {
@@ -20,7 +19,7 @@ namespace Mémoire_SI
         //Ne pas toucher ce qui suit!
         private static string datasource = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=";
         private static string secure = ";Integrated Security=True;Connect Timeout=30;Encrypt=True";
-        
+
         public static SqlConnection con = new SqlConnection($"{datasource}{path}{secure}");
 
     }

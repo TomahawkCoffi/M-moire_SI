@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using MySqlX.XDevAPI.Relational;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using Microsoft.Data.SqlClient;
-using MySqlX.XDevAPI.Relational;
 
 
 namespace Mémoire_SI
@@ -17,6 +17,10 @@ namespace Mémoire_SI
     public partial class Tableau_de_bordVue : Form
     {
         private int loggedInUserId;
+        private string username; // Variable pour stocker le nom d'utilisateur
+        private string userRole; // Ajout de la variable pour stocker le rôle de l'utilisateur
+
+
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -27,16 +31,17 @@ namespace Mémoire_SI
               int nRightRect,
               int nBottomRect,
               int nWidthEllipse,
-             int nHeightEllipse
+              int nHeightEllipse
 
           );
 
 
-        public Tableau_de_bordVue()
+        public Tableau_de_bordVue(int userId, string role)
         {
             InitializeComponent();
-            //this.loggedInUserId = userId;
+            this.loggedInUserId = userId;
             ShowUsernameOnHomePage();
+            this.userRole = role; // Stocke le rôle de l'utilisateur
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlnav.Height = btndshb.Height;
@@ -51,14 +56,17 @@ namespace Mémoire_SI
             this.pnlformloader.Controls.Add(Frmdashboard_Vrb);
             Frmdashboard_Vrb.Show();
 
-            
+
         }
 
-        /*public class ShowCurrentUser
+        // Méthode pour définir et afficher le nom d'utilisateur
+        public void SetUsername(string username)
         {
-            private int loggedInUserId;
-            // ... Autres membres de la classe ...
-        }*/
+            this.username = username;
+            Nom_profil.Text = $"Bienvenue, {username} !";
+        }
+
+
 
 
 
@@ -106,19 +114,19 @@ namespace Mémoire_SI
             Frmdashboard_Vrb.Show();
         }
 
-        private void btnhstr_Click(object sender, EventArgs e)
-        {
-            pnlnav.Height = btnhstr.Height;
-            pnlnav.Top = btnhstr.Top;
-            btnhstr.BackColor = Color.Turquoise;
+        //private void btnhstr_Click(object sender, EventArgs e)
+        //{
+        //    pnlnav.Height = btnhstr.Height;
+        //    pnlnav.Top = btnhstr.Top;
+        //    btnhstr.BackColor = Color.Turquoise;
 
-            lbltitre.Text = "HISTORIQUE";
-            this.pnlformloader.Controls.Clear();
-            Historique Frmdashboard_Vrb = new Historique() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Frmdashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlformloader.Controls.Add(Frmdashboard_Vrb);
-            Frmdashboard_Vrb.Show();
-        }
+        //    lbltitre.Text = "HISTORIQUE";
+        //    this.pnlformloader.Controls.Clear();
+        //    Historique Frmdashboard_Vrb = new Historique() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        //    Frmdashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
+        //    this.pnlformloader.Controls.Add(Frmdashboard_Vrb);
+        //    Frmdashboard_Vrb.Show();
+        //}
 
         private void btncase_Click(object sender, EventArgs e)
         {
@@ -169,19 +177,19 @@ namespace Mémoire_SI
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            pnlnav.Height = btncmd.Height;
-            pnlnav.Top = btncmd.Top;
-            btncmd.BackColor = Color.Turquoise;
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    pnlnav.Height = btncmd.Height;
+        //    pnlnav.Top = btncmd.Top;
+        //    btncmd.BackColor = Color.Turquoise;
 
-            lbltitre.Text = "COMMANDE";
-            this.pnlformloader.Controls.Clear();
-            Commande_livraison Frmdashboard_Vrb = new Commande_livraison() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Frmdashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlformloader.Controls.Add(Frmdashboard_Vrb);
-            Frmdashboard_Vrb.Show();
-        }
+        //    lbltitre.Text = "COMMANDE";
+        //    this.pnlformloader.Controls.Clear();
+        //    Commande_livraison Frmdashboard_Vrb = new Commande_livraison() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        //    Frmdashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
+        //    this.pnlformloader.Controls.Add(Frmdashboard_Vrb);
+        //    Frmdashboard_Vrb.Show();
+        //}
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -242,7 +250,7 @@ namespace Mémoire_SI
             pnlnav.Top = btncat.Top;
             btncat.BackColor = Color.Turquoise;
 
-            lbltitre.Text = "CATEGORIE";
+            lbltitre.Text = "TYPE DE MEDICAMENT";
             this.pnlformloader.Controls.Clear();
             CategoriesVue Frmdashboard_Vrb = new CategoriesVue() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Frmdashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -262,7 +270,7 @@ namespace Mémoire_SI
             pnlnav.Top = btnmed.Top;
             btnmed.BackColor = Color.Turquoise;
 
-            lbltitre.Text = "MEDICAMENT";
+            lbltitre.Text = "MEDICAMENTS";
             this.pnlformloader.Controls.Clear();
             MedicamentList Frmdashboard_Vrb = new MedicamentList() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Frmdashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -285,6 +293,33 @@ namespace Mémoire_SI
         {
             ShowUsernameOnHomePage();
         }
+        // Méthode pour activer ou désactiver les boutons selon le rôle
+        public void ActiverDesactiverBoutons(string role)
+        {
+            // Si le rôle est "Admin", les boutons seront visibles
+            if (role == "Admin")
+            {
+                btnfsr.Enabled = true;
+                btncat.Enabled = true;
+                btnentreestk.Enabled = true;
+                btnmed.Enabled = true;
+            }
+            // Si le rôle est "User", les boutons seront cachés
+            else if (role == "User")
+            {
+                btnfsr.Enabled = false;
+                btncat.Enabled = false;
+                btnentreestk.Enabled = false;
+                btnmed.Enabled = false;
+            }
+            // Optionnel: si tu veux gérer d'autres rôles ou cas d'erreur
+            else
+            {
+                MessageBox.Show("Rôle non reconnu.");
+            }
+        }
+
+
 
         private void ShowUsernameOnHomePage()
         {
@@ -303,55 +338,10 @@ namespace Mémoire_SI
 
                         object result = getUserCommand.ExecuteScalar();
 
-                        string username = label_user.Text;
-
-
-
-
-                        if (result != null)
-                        {
-                            string userRole = result.ToString();
-                            label_user.Text = $"Bienvenue, {username}!";
-
-                            // Désactive tous les boutons par défaut
-                            btndshb.Enabled = false;
-                            btnstock.Enabled = false;
-                            btnhstr.Enabled = false;
-                            //btncase.Enabled = false;
-                            btncmd.Enabled = false;
-                            btnentreestk.Enabled = false;
-                            btnfsr.Enabled = false;
-                            btncat.Enabled = false;
-                            btnmed.Enabled = false;
-
-                            // Active le bouton de Sortie de stock si l'utilisateur a le rôle "User"
-                            if (userRole == "User")
-                            {
-                                btnsortistk.Enabled = true;
-                            }
-                            // Active tous les boutons si l'utilisateur a le rôle "Admin"
-                            else if (userRole == "Admin")
-                            {
-                                btndshb.Enabled = true;
-                                btnstock.Enabled = true;
-                                btnhstr.Enabled = true;
-                                //btncase.Enabled = true;
-                                btncmd.Enabled = true;
-                                btnentreestk.Enabled = true;
-                                btnfsr.Enabled = true;
-                                btncat.Enabled = true;
-                                btnmed.Enabled = true;
-                            }
-
-                            /* if (result != null)
-                             {
-                                 string username = result.ToString();
-                                 label_user.Text = $"Bienvenue, {username}!";
-                             }*/
-                        }
                     }
                 }
             }
+
 
             catch (Exception ex)
             {
@@ -359,5 +349,14 @@ namespace Mémoire_SI
             }
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnhstr_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

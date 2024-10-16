@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.medicamentDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnmedsupp = new Guna.UI2.WinForms.Guna2Button();
             this.btnmedmod = new Guna.UI2.WinForms.Guna2Button();
@@ -52,30 +52,30 @@
             // 
             this.medicamentDGV.AllowUserToAddRows = false;
             this.medicamentDGV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.medicamentDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.medicamentDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.medicamentDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.medicamentDGV.BackgroundColor = System.Drawing.Color.White;
             this.medicamentDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.medicamentDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.medicamentDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.medicamentDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.medicamentDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.medicamentDGV.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.medicamentDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.medicamentDGV.DefaultCellStyle = dataGridViewCellStyle9;
             this.medicamentDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.medicamentDGV.EnableHeadersVisualStyles = false;
             this.medicamentDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -105,7 +105,7 @@
             this.medicamentDGV.ThemeStyle.ReadOnly = true;
             this.medicamentDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.medicamentDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.medicamentDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.medicamentDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medicamentDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.medicamentDGV.ThemeStyle.RowsStyle.Height = 28;
             this.medicamentDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -114,12 +114,15 @@
             // 
             // btnmedsupp
             // 
+            this.btnmedsupp.BorderRadius = 5;
             this.btnmedsupp.CheckedState.Parent = this.btnmedsupp;
             this.btnmedsupp.CustomImages.Parent = this.btnmedsupp;
-            this.btnmedsupp.FillColor = System.Drawing.Color.Red;
+            this.btnmedsupp.FillColor = System.Drawing.Color.DarkOrchid;
             this.btnmedsupp.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmedsupp.ForeColor = System.Drawing.Color.White;
             this.btnmedsupp.HoverState.Parent = this.btnmedsupp;
+            this.btnmedsupp.Image = global::Mémoire_SI.Properties.Resources.icons8_supprimer_pour_toujours_50;
+            this.btnmedsupp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnmedsupp.Location = new System.Drawing.Point(931, 210);
             this.btnmedsupp.Name = "btnmedsupp";
             this.btnmedsupp.ShadowDecoration.Parent = this.btnmedsupp;
@@ -130,11 +133,15 @@
             // 
             // btnmedmod
             // 
+            this.btnmedmod.BorderRadius = 5;
             this.btnmedmod.CheckedState.Parent = this.btnmedmod;
             this.btnmedmod.CustomImages.Parent = this.btnmedmod;
+            this.btnmedmod.FillColor = System.Drawing.Color.DarkOrchid;
             this.btnmedmod.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmedmod.ForeColor = System.Drawing.Color.White;
             this.btnmedmod.HoverState.Parent = this.btnmedmod;
+            this.btnmedmod.Image = global::Mémoire_SI.Properties.Resources.icons8_boucle_50;
+            this.btnmedmod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnmedmod.Location = new System.Drawing.Point(488, 210);
             this.btnmedmod.Name = "btnmedmod";
             this.btnmedmod.ShadowDecoration.Parent = this.btnmedmod;
@@ -145,12 +152,15 @@
             // 
             // medaddbtn
             // 
+            this.medaddbtn.BorderRadius = 5;
             this.medaddbtn.CheckedState.Parent = this.medaddbtn;
             this.medaddbtn.CustomImages.Parent = this.medaddbtn;
-            this.medaddbtn.FillColor = System.Drawing.Color.Lime;
+            this.medaddbtn.FillColor = System.Drawing.Color.DarkOrchid;
             this.medaddbtn.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medaddbtn.ForeColor = System.Drawing.Color.White;
             this.medaddbtn.HoverState.Parent = this.medaddbtn;
+            this.medaddbtn.Image = global::Mémoire_SI.Properties.Resources.icons8_approved_48;
+            this.medaddbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.medaddbtn.Location = new System.Drawing.Point(68, 210);
             this.medaddbtn.Name = "medaddbtn";
             this.medaddbtn.ShadowDecoration.Parent = this.medaddbtn;
@@ -195,9 +205,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(847, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(284, 41);
+            this.label3.Size = new System.Drawing.Size(286, 41);
             this.label3.TabIndex = 27;
-            this.label3.Text = "Type médicament :";
+            this.label3.Text = "Type Médicament :";
             // 
             // categoryTableAdapter
             // 
@@ -206,15 +216,16 @@
             // medcatcb
             // 
             this.medcatcb.BackColor = System.Drawing.Color.Transparent;
+            this.medcatcb.BorderRadius = 5;
             this.medcatcb.DataSource = this.categoryBindingSource;
             this.medcatcb.DisplayMember = "Catnom";
             this.medcatcb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.medcatcb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.medcatcb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.medcatcb.FillColor = System.Drawing.Color.DarkOrchid;
             this.medcatcb.FocusedColor = System.Drawing.Color.Empty;
             this.medcatcb.FocusedState.Parent = this.medcatcb;
             this.medcatcb.Font = new System.Drawing.Font("Segoe UI Semibold", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medcatcb.ForeColor = System.Drawing.Color.Black;
+            this.medcatcb.ForeColor = System.Drawing.Color.White;
             this.medcatcb.FormattingEnabled = true;
             this.medcatcb.HoverState.Parent = this.medcatcb;
             this.medcatcb.ItemHeight = 30;

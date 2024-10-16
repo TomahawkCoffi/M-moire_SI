@@ -45,8 +45,9 @@
             this.lbltitre = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlformloader = new System.Windows.Forms.Panel();
-            this.btndeco = new System.Windows.Forms.Button();
             this.label_user = new System.Windows.Forms.Label();
+            this.Nom_profil = new System.Windows.Forms.Label();
+            this.btndeco = new System.Windows.Forms.Button();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,7 +104,7 @@
             this.btncat.Name = "btncat";
             this.btncat.Size = new System.Drawing.Size(249, 73);
             this.btncat.TabIndex = 10;
-            this.btncat.Text = "CATEGORIE";
+            this.btncat.Text = "TYPE DE MEDICAMENT";
             this.btncat.UseVisualStyleBackColor = false;
             this.btncat.Click += new System.EventHandler(this.button2_Click_2);
             this.btncat.Leave += new System.EventHandler(this.btncat_Leave);
@@ -157,7 +158,7 @@
             this.btncmd.Text = "COMMANDE";
             this.btncmd.UseVisualStyleBackColor = false;
             this.btncmd.Visible = false;
-            this.btncmd.Click += new System.EventHandler(this.button2_Click);
+            this.btncmd.Click += new System.EventHandler(this.button2_Click_2);
             this.btncmd.Leave += new System.EventHandler(this.btncmd_liv_Leave);
             // 
             // btnsortistk
@@ -193,7 +194,6 @@
             this.btnhstr.UseVisualStyleBackColor = false;
             this.btnhstr.Visible = false;
             this.btnhstr.Click += new System.EventHandler(this.btnhstr_Click);
-            this.btnhstr.Leave += new System.EventHandler(this.btnhstr_Leave);
             // 
             // btnstock
             // 
@@ -275,11 +275,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(1518, 10);
+            this.button1.Image = global::Mémoire_SI.Properties.Resources.icons8_effacer_64__1_;
+            this.button1.Location = new System.Drawing.Point(1485, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 45);
+            this.button1.Size = new System.Drawing.Size(73, 45);
             this.button1.TabIndex = 4;
-            this.button1.Text = "x";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -293,21 +293,6 @@
             this.pnlformloader.TabIndex = 5;
             this.pnlformloader.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlformloader_Paint);
             // 
-            // btndeco
-            // 
-            this.btndeco.BackColor = System.Drawing.Color.Transparent;
-            this.btndeco.FlatAppearance.BorderSize = 0;
-            this.btndeco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndeco.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndeco.ForeColor = System.Drawing.Color.DarkViolet;
-            this.btndeco.Location = new System.Drawing.Point(1263, 10);
-            this.btndeco.Name = "btndeco";
-            this.btndeco.Size = new System.Drawing.Size(249, 99);
-            this.btndeco.TabIndex = 7;
-            this.btndeco.Text = "DECONNEXION";
-            this.btndeco.UseVisualStyleBackColor = false;
-            this.btndeco.Click += new System.EventHandler(this.btndeco_Click);
-            // 
             // label_user
             // 
             this.label_user.AutoSize = true;
@@ -318,12 +303,40 @@
             this.label_user.TabIndex = 8;
             this.label_user.Click += new System.EventHandler(this.label_user_Click);
             // 
+            // Nom_profil
+            // 
+            this.Nom_profil.AutoSize = true;
+            this.Nom_profil.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nom_profil.ForeColor = System.Drawing.Color.ForestGreen;
+            this.Nom_profil.Location = new System.Drawing.Point(845, 19);
+            this.Nom_profil.Name = "Nom_profil";
+            this.Nom_profil.Size = new System.Drawing.Size(126, 31);
+            this.Nom_profil.TabIndex = 10;
+            this.Nom_profil.Text = "Bienvenue";
+            this.Nom_profil.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btndeco
+            // 
+            this.btndeco.BackColor = System.Drawing.Color.Transparent;
+            this.btndeco.FlatAppearance.BorderSize = 0;
+            this.btndeco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndeco.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeco.ForeColor = System.Drawing.Color.DarkViolet;
+            this.btndeco.Image = global::Mémoire_SI.Properties.Resources.icons8_déconnexion_arrondi_50;
+            this.btndeco.Location = new System.Drawing.Point(1325, 10);
+            this.btndeco.Name = "btndeco";
+            this.btndeco.Size = new System.Drawing.Size(154, 65);
+            this.btndeco.TabIndex = 7;
+            this.btndeco.UseVisualStyleBackColor = false;
+            this.btndeco.Click += new System.EventHandler(this.btndeco_Click);
+            // 
             // Tableau_de_bordVue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1570, 916);
+            this.Controls.Add(this.Nom_profil);
             this.Controls.Add(this.label_user);
             this.Controls.Add(this.btndeco);
             this.Controls.Add(this.pnlformloader);
@@ -332,6 +345,7 @@
             this.Controls.Add(this.pnlnav);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tableau_de_bordVue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.dashboard_Load);
@@ -363,5 +377,6 @@
         private System.Windows.Forms.Button btnmed;
         private System.Windows.Forms.Button btncat;
         private System.Windows.Forms.Label label_user;
+        private System.Windows.Forms.Label Nom_profil;
     }
 }

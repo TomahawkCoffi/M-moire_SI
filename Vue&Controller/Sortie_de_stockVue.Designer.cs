@@ -73,13 +73,13 @@
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.Sortie_de_stockDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Sortie_de_stockDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Sortie_de_stockDGV.BackgroundColor = System.Drawing.Color.White;
+            this.Sortie_de_stockDGV.BackgroundColor = System.Drawing.SystemColors.Window;
             this.Sortie_de_stockDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sortie_de_stockDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Sortie_de_stockDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -88,7 +88,7 @@
             this.Sortie_de_stockDGV.ColumnHeadersHeight = 4;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -112,18 +112,18 @@
             this.Sortie_de_stockDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.Sortie_de_stockDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.Sortie_de_stockDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.Sortie_de_stockDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Sortie_de_stockDGV.ThemeStyle.BackColor = System.Drawing.SystemColors.Window;
             this.Sortie_de_stockDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.Sortie_de_stockDGV.ThemeStyle.HeaderStyle.Height = 4;
             this.Sortie_de_stockDGV.ThemeStyle.ReadOnly = true;
             this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.Height = 28;
             this.Sortie_de_stockDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -132,12 +132,15 @@
             // 
             // Supprimer_sortie_de_stock
             // 
+            this.Supprimer_sortie_de_stock.BorderRadius = 5;
             this.Supprimer_sortie_de_stock.CheckedState.Parent = this.Supprimer_sortie_de_stock;
             this.Supprimer_sortie_de_stock.CustomImages.Parent = this.Supprimer_sortie_de_stock;
-            this.Supprimer_sortie_de_stock.FillColor = System.Drawing.Color.Red;
+            this.Supprimer_sortie_de_stock.FillColor = System.Drawing.Color.DarkOrchid;
             this.Supprimer_sortie_de_stock.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Supprimer_sortie_de_stock.ForeColor = System.Drawing.Color.White;
             this.Supprimer_sortie_de_stock.HoverState.Parent = this.Supprimer_sortie_de_stock;
+            this.Supprimer_sortie_de_stock.Image = global::Mémoire_SI.Properties.Resources.icons8_supprimer_pour_toujours_50;
+            this.Supprimer_sortie_de_stock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Supprimer_sortie_de_stock.Location = new System.Drawing.Point(950, 277);
             this.Supprimer_sortie_de_stock.Name = "Supprimer_sortie_de_stock";
             this.Supprimer_sortie_de_stock.ShadowDecoration.Parent = this.Supprimer_sortie_de_stock;
@@ -148,11 +151,15 @@
             // 
             // Modifier_sortie_de_stock
             // 
+            this.Modifier_sortie_de_stock.BorderRadius = 5;
             this.Modifier_sortie_de_stock.CheckedState.Parent = this.Modifier_sortie_de_stock;
             this.Modifier_sortie_de_stock.CustomImages.Parent = this.Modifier_sortie_de_stock;
+            this.Modifier_sortie_de_stock.FillColor = System.Drawing.Color.DarkOrchid;
             this.Modifier_sortie_de_stock.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Modifier_sortie_de_stock.ForeColor = System.Drawing.Color.White;
             this.Modifier_sortie_de_stock.HoverState.Parent = this.Modifier_sortie_de_stock;
+            this.Modifier_sortie_de_stock.Image = global::Mémoire_SI.Properties.Resources.icons8_boucle_50;
+            this.Modifier_sortie_de_stock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Modifier_sortie_de_stock.Location = new System.Drawing.Point(507, 277);
             this.Modifier_sortie_de_stock.Name = "Modifier_sortie_de_stock";
             this.Modifier_sortie_de_stock.ShadowDecoration.Parent = this.Modifier_sortie_de_stock;
@@ -163,12 +170,15 @@
             // 
             // Ajouter_sortie_de_stock
             // 
+            this.Ajouter_sortie_de_stock.BorderRadius = 5;
             this.Ajouter_sortie_de_stock.CheckedState.Parent = this.Ajouter_sortie_de_stock;
             this.Ajouter_sortie_de_stock.CustomImages.Parent = this.Ajouter_sortie_de_stock;
-            this.Ajouter_sortie_de_stock.FillColor = System.Drawing.Color.Lime;
+            this.Ajouter_sortie_de_stock.FillColor = System.Drawing.Color.DarkOrchid;
             this.Ajouter_sortie_de_stock.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ajouter_sortie_de_stock.ForeColor = System.Drawing.Color.White;
             this.Ajouter_sortie_de_stock.HoverState.Parent = this.Ajouter_sortie_de_stock;
+            this.Ajouter_sortie_de_stock.Image = global::Mémoire_SI.Properties.Resources.icons8_approved_481;
+            this.Ajouter_sortie_de_stock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Ajouter_sortie_de_stock.Location = new System.Drawing.Point(87, 277);
             this.Ajouter_sortie_de_stock.Name = "Ajouter_sortie_de_stock";
             this.Ajouter_sortie_de_stock.ShadowDecoration.Parent = this.Ajouter_sortie_de_stock;
@@ -233,7 +243,7 @@
             this.Quantité.BackColor = System.Drawing.Color.White;
             this.Quantité.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Quantité.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Quantité.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantité.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quantité.LineColor = System.Drawing.Color.Gainsboro;
             this.Quantité.Location = new System.Drawing.Point(906, 39);
             this.Quantité.Name = "Quantité";
@@ -241,6 +251,7 @@
             this.Quantité.SelectedText = "";
             this.Quantité.Size = new System.Drawing.Size(231, 41);
             this.Quantité.TabIndex = 32;
+            this.Quantité.TextChanged += new System.EventHandler(this.Quantité_TextChanged);
             // 
             // label2
             // 
@@ -274,9 +285,11 @@
             // 
             // Date_achat
             // 
+            this.Date_achat.BorderRadius = 5;
             this.Date_achat.CheckedState.Parent = this.Date_achat;
-            this.Date_achat.FillColor = System.Drawing.Color.LightGreen;
+            this.Date_achat.FillColor = System.Drawing.Color.DarkOrchid;
             this.Date_achat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date_achat.ForeColor = System.Drawing.Color.White;
             this.Date_achat.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Date_achat.HoverState.Parent = this.Date_achat;
             this.Date_achat.Location = new System.Drawing.Point(12, 133);
@@ -303,7 +316,7 @@
             this.Nom_du_client.BackColor = System.Drawing.Color.White;
             this.Nom_du_client.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Nom_du_client.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Nom_du_client.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nom_du_client.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nom_du_client.LineColor = System.Drawing.Color.Gainsboro;
             this.Nom_du_client.Location = new System.Drawing.Point(507, 43);
             this.Nom_du_client.Name = "Nom_du_client";

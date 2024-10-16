@@ -13,7 +13,7 @@ namespace Mémoire_SI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmregister());
+            Application.Run(new Userlogin());
         }
     }
 }
